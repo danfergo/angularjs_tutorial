@@ -1,7 +1,13 @@
-<h2>Página 1</h2>
+<h2>Página 1111</h2>
+
+<div angular-bootstrap-dropdown usuarios="pagina1Ctrl.users"></div>
+<input type="text" ng-model="variavelQuery">
+
+{{variavelQuery | minusculas }}
+
 <div class="container">
     <div class="card" style="width: 20rem;"
-         ng-repeat="user in pagina1Ctrl.users">
+         ng-repeat="user in pagina1Ctrl.users | filter:variavelQuery:'name' | minusculas:'email'">
         <div class="card-body">
             <h4 class="card-title">{{user.name}}</h4>
             <p class="card-text">{{user.email}}</p>

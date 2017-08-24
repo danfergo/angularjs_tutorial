@@ -9,8 +9,8 @@ views: [
 ]
 componentes: [
     + Controllers (associado a um template)
-    - Directives (não necessáriamente ? )
-    - Filters ?! (cenas.)
+    + Directives (não necessáriamente ? )
+    + Filters ?! (cenas.)
 ]
 model : [
     - Services / Factories / Constants
